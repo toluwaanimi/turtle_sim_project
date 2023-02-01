@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="name" default="turtle"/>
+    
+    <node pkg="turtlesim" type="turtlesim_node" name="$(arg name)">
+        
+    </node>
+    <node pkg="ros_turtlesim" type="autonomous_navigation.py" name="autonomous_navigation" output="screen" launch-prefix="gnome-terminal --command">
+        
+    </node>
+
+</launch>

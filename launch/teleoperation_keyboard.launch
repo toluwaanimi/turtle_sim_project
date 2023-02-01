@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+  <node pkg="ros_turtlesim" type="keyboard_teleoperation.py" name="keyboard_teleoperation" output="screen" launch-prefix="gnome-terminal --command">
+    
+  </node>
+  
+  
+</launch>

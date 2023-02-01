@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="name" default="turtle"/>
+
+    <node pkg="turtlesim" type="turtlesim_node" name="$(arg name)">
+        
+    </node>
+    <node pkg="ros_turtlesim" type="spawn_turtle.py" name="spawn_turtle_node" respawn="false" output="screen">
+        
+    </node>
+    <node pkg="ros_turtlesim" type="vacuum_cleaning_behaviour.py" name="vacuum_cleaning_behaviour" respawn="false" output="screen">
+      
+    </node>
+
+
+
+</launch>
